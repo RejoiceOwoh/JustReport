@@ -1,0 +1,177 @@
+
+
+
+body{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0.67) 100%), url("../images/homepagemain.png"), lightgray 50% ;
+    background-repeat: repeat-y;
+    background-position: top;
+    background-size: 100% auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    font-style: normal;
+    font-size: small;
+    margin: 0;
+}
+
+
+header{
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: baseline;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: none;
+    outline: none;
+  }  
+
+span#logo{
+    color: #FF851B;
+}
+
+header>ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav>ul>li{
+    list-style: none;
+    display: inline;
+    padding: 10px 20px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 1s ease-in-out
+}
+nav>ul>#active{
+    border-bottom: 3px solid #FF851B;
+}
+nav>ul>li:hover{
+    border-bottom: 3px solid #FF851B;
+}
+
+header>button{
+    background-color: #FF4136;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #f5f5f5;
+    padding: 10px;
+    border: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div>h1#left-main{
+    text-align: right;
+    padding: 10px;
+}
+main>div>h1#right-main{
+    color: #FF851B;
+    text-align: left;
+    padding: 10px;
+}
+
+main>div.theme-text {
+    padding: 50px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 900;
+    flex-direction: row;
+}
+
+main>p {
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+main.main_buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+main.main_buttons>div {
+    display: flex;
+    justify-content: center;
+}
+
+div>button#hotline {
+    border-radius: 10px;
+    background: rgba(255, 64, 54, 0.81);
+    padding: 10px 30px;
+    font-size: medium;
+    font-weight: 700;
+    margin-right: 30px;
+}
+div>button#report {
+    border-radius: 10px;
+    background: rgba(255, 133, 27, 0.81);
+    padding: 10px 30px;
+    font-size: medium;
+    font-weight: 700;
+    margin-right: 60px;
+    margin-bottom: 0px;
+}
+div#action_text {
+    display: flex;
+    justify-content: center;
+}
+#action_text>h4#Track{
+    font-size: small;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+#action_text>h4#Login{
+    font-size: small;
+    margin-right: 70px;
+    margin-top: 10px;
+}
+
+.stats{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.stats>div>h1{
+    margin-bottom: 0px;
+    font-size: 2.5rem;
+}
+.stats>div>p{
+    margin-top: 0px;
+}
+.stats>div{
+    text-align: center;
+    padding: 30px 70px
+}
+
+footer{
+    border-top: 3px solid #FFF;
+    background: #1E1E1E;
+    width: 100%;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

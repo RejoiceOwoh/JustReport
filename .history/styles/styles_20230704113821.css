@@ -1,0 +1,43 @@
+
+
+
+body{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0.67) 100%), url("../images/homepagemain.png"), lightgray 50% ;
+    background-repeat: repeat-y;
+    background-position: top;
+    background-size: 100% auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    font-style: normal;
+    font-size: small;
+}
+
+
+header{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: baseline;
+}
+
+header>h2>span{
+    color: #FF851B;
+}
+
+header>ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav>ul>li{
+    list-style: none;
+    display: inline;
+    padding: 10px 20px;
+}
+nav>ul>#active{
+    border-bottom: 3px solid #FF851B;
+}
