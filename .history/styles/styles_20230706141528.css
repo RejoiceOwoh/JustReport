@@ -49,19 +49,7 @@ section {
     justify-content: center;
     padding: 15px
 }
-/* REPORT A PAGE */
-.section1>div.reportimg{
-    background-image: url('../images/reportdiv1.png');
-}
-.section2>div.reportimg{
-    background-image: url('../images/reportdiv2.png');
-}
-.section3>div.reportimg{
-    background-image: url('../images/reportdiv3.png');
-}
-/* REPORT A PAGE */
 
-/* About section */
 .section1>div.img{
     background-image: url('../images/aboutdiv1.jpg');
 }
@@ -71,7 +59,6 @@ section {
 .section3>div.img{
     background-image: url('../images/aboutdiv3.png');
 }
-/* About Section End  */
 
 div.bg-dark{
     background-color: #1E1E1E;
@@ -82,12 +69,12 @@ div.bg-dark{
     text-align: right;
 }
 
-.bg-light>div#sectionText>p, .bg-light>div#sectionText>h2 {
+.bg-light>div#sectionText>p {
     color: #1E1E1E;
     text-align: left;
 }
 
-section>div.img, section>div.reportimg{
+section>div.img{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -119,11 +106,20 @@ a {
 
 header{
     padding: 10px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: baseline;
 }
+
+.navbar-dark {
+    background-color: #333333; /* Replace with your desired dark color */
+    /* Add additional styling as needed */
+  }
+  
 
 button {
     padding: 0;
@@ -164,7 +160,7 @@ nav>ul>li:hover{
     border-bottom: 3px solid #FF851B;
 }
 
-header>button, .reportButton{
+header>button{
     background-color: #FF4136;
     border-radius: 10px;
     font-weight: 700;

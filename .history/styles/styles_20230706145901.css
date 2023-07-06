@@ -56,7 +56,7 @@ section {
 .section2>div.reportimg{
     background-image: url('../images/reportdiv2.png');
 }
-.section3>div.reportimg{
+.section2>div.reportimg{
     background-image: url('../images/reportdiv3.png');
 }
 /* REPORT A PAGE */
