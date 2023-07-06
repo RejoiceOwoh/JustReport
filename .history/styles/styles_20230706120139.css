@@ -46,35 +46,11 @@ section {
     flex-direction: row;
     width: 70%;
     align-content:space-between;
-    justify-content: center;
     padding: 15px
 }
 
-.section1>div.img{
-    background-image: url('../images/aboutdiv1.jpg');
-}
-.section2>div.img{
-    background-image: url('../images/aboutdiv2.png');
-}
-.section3>div.img{
-    background-image: url('../images/aboutdiv3.png');
-}
-
-div.bg-dark{
-    background-color: #1E1E1E;
-    color: #f5f5f5;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    text-align: right;
-}
-
-.bg-light>div#sectionText>p {
-    color: #1E1E1E;
-    text-align: left;
-}
-
 section>div.img{
+    background-image: url('../images/aboutdiv1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,7 +60,12 @@ section>div.img{
 
 #sectionText{
     /* width: auto; */
-    padding: 20px 30px;
+    padding: 20px 50px;
+}
+
+div#sectionText>p {
+    color: #1E1E1E;
+    /* align-items: flex-end; */
 }
 
 

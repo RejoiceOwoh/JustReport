@@ -56,9 +56,6 @@ section {
 .section2>div.img{
     background-image: url('../images/aboutdiv2.png');
 }
-.section3>div.img{
-    background-image: url('../images/aboutdiv3.png');
-}
 
 div.bg-dark{
     background-color: #1E1E1E;
@@ -73,6 +70,10 @@ div.bg-dark{
     color: #1E1E1E;
     text-align: left;
 }
+.bg-dark#sectionText>p {
+    color: #1E1E1E;
+    text-align: right;
+}
 
 section>div.img{
     background-size: cover;
@@ -84,7 +85,7 @@ section>div.img{
 
 #sectionText{
     /* width: auto; */
-    padding: 20px 30px;
+    padding: 20px 50px;
 }
 
 

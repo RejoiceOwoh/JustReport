@@ -56,9 +56,6 @@ section {
 .section2>div.img{
     background-image: url('../images/aboutdiv2.png');
 }
-.section3>div.img{
-    background-image: url('../images/aboutdiv3.png');
-}
 
 div.bg-dark{
     background-color: #1E1E1E;
