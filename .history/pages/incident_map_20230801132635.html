@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Page</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+
+
+</head>
+<body class="other">
+    <div class="about">
+        <header>
+            <h2>Just <span id="logo">Report</span></h2>
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li><a href="report_a_crime.html">Report a Crime</a></li>
+                    <li id="active"> <a href="incident_map.html">Incident Map</a></li>
+                    <li>Incident Details</li>
+                </ul>
+            </nav>
+            <button>CALL HOTLINE</button>
+        </header> 
+        <div class="headerText">
+            <h1>
+                INCIDENT MAP
+            </h1>     
+            <p>
+                Welcome to the Incident Map, where you can explore reported incidents on campus. Use the interactive map below to view incident locations and gather information about specific incidents.
+            </p>
+        </div>
+    </div>
+
+    <main>
+
+        <section>
+            <div id='map' style='width: 100%; height: 50%;'></div>
+        </section>
+        
+
+        <section class="section1 bg-light">
+            <img src="../images/maptemplate.png" alt="map">
+        </section>
+        
+          
+        <div class="sectiondiv bg-dark">
+            <section class="section2">
+                <div id="sectionText">
+                    <h2>
+                        Disclaimer
+                    </h2>
+                    <p>
+                        Please note that the incident markers on the map represent reported incidents and may not necessarily reflect real-time or comprehensive data. The map is intended for informational purposes only.
+                    </p>
+                    <h2>
+                        Reporting a New Incident
+                    </h2>
+                    <p>
+                        If you need to report a new incident, please click the button below to access the "Report Form" page
+                    </p>
+                    <p>
+                        <button class="reportButton">ACCESS REPORT FORM</button>
+                    </p>
+    
+                </div>
+                <div class="incidentimg"></div>
+            </section>
+        </div>
+
+
+        <section class="section3 bg-light">
+            <div class="incidentimg"></div>
+            <div id="sectionText">
+                <h2>
+                    Privacy and Security
+                </h2>
+                <p>
+                    We value your privacy and handle all reported incidents and personal information with the utmost security. Rest assured that your information will be treated confidentially and in accordance with privacy regulations.
+                </p>
+                <h2>
+                    Contact Us
+                </h2>
+                <p>
+                    If you have any questions, encounter any issues while using the incident map, or need further assistance, please don't hesitate to contact us. Our dedicated team is ready to assist you. You can reach us at owohrejoice@gmail.com or call our helpline at [+234] [0] 903 847 0835. 
+                </p>
+                
+            </div>
+        </section>
+        
+       
+        <footer>
+            
+            <div>
+                <h2>Just <span id="logo">Report</span></h2>
+                <p>Login Here!</p>
+            </div>
+            <div>
+                <p>Home</p>
+                <p>About</p>
+            </div>
+            <div>
+                <p>Report a Crime</p>
+                <p>Incident Map</p>
+            </div>
+            <div>
+                <p>Incident Details</p>
+                <p>Track Reported Case</p>
+            </div>
+            <div>
+                <button>REPORT A CRIME</button>
+            </div>
+        </footer>
+        <p class="copyright">
+            All Rights Reserved by Obinna 2023 UNN Final Year Project
+        </p>
+    </main>
+
+
+    <script src="../scripts/index.js"></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicmVqb2ljZWNvcnBvcmF0aW9ucyIsImEiOiJjbDE2eTV2ZG4waGRvM2twZjk3MWFsOXUzIn0.xtCcnCaB0E8hNbieercpvQ';
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11'
+        });
+      </script>
+</body>
+</html>

@@ -195,6 +195,34 @@ textarea{
 } */
 
 
+/* Google Maps */
+
+#map {
+    height: 100%;
+  }
+  
+  /** 
+   * Optional: Makes the sample page fill the window. 
+   */
+  /* html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  } */
+  
+ #info-box {
+    background-color: white;
+    border: 1px solid #ff0000;
+    bottom: 30px;
+    height: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 30px;
+  }
+
+  /* Google  Maps */
+
 
 form>h2{
     color: #FF4136;

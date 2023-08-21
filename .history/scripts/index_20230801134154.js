@@ -76,18 +76,9 @@ document.getElementById('geolocationButton').addEventListener('click', function(
 //     });
 // });
 
-mapboxgl.accessToken = 'pk.eyJ1IjoicmVqb2ljZWNvcnBvcmF0aW9ucyIsImEiOiJjbDE2eTV2ZG4waGRvM2twZjk3MWFsOXUzIn0.xtCcnCaB0E8hNbieercpvQ';
-        var map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/streets-v11'
-        });
-
-        const map = new mapboxgl.Map({
-          container: 'map', // container ID
-          // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-          style: 'mapbox://styles/mapbox/streets-v12', // style URL
-          center: [-74.5, 40], // starting position [lng, lat]
-          zoom: 9 // starting zoom
-          });
-
-
+const map = new mapboxgl.Map({
+  container: 'map', // container ID
+  // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+  style: 'mapbox://styles/mapbox/streets-v12', // style URL
+  center: [-74.5, 40], // starting position [lng, lat]
+  zoom: 9 // starting zoom

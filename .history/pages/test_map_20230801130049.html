@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Default Data Layer: Earthquakes</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <style>
+    #map {
+  height: 100%;
+    }
+
+    /** 
+    * Optional: Makes the sample page fill the window. 
+    */
+    html,
+    body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+    #info-box {
+    background-color: white;
+    border: 1px solid black;
+    bottom: 30px;
+    height: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 30px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="info-box">?</div>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer
+    ></script>
+    
+  </body>
+</html>

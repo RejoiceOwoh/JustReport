@@ -89,5 +89,3 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmVqb2ljZWNvcnBvcmF0aW9ucyIsImEiOiJjbDE2eTV2Z
           center: [-74.5, 40], // starting position [lng, lat]
           zoom: 9 // starting zoom
           });
-
-

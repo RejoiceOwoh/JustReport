@@ -150,7 +150,7 @@ textarea{
     width: 300%;
     position: absolute;
     left: -100%;
-    background: -webkit-linear-gradient(right, #1E1E1E, #FF4136, #FF851B, #e845d5);
+    background: -webkit-linear-gradient(right, #1E1E1E, #FF4136, #FF851B, #1E1E1E);
     transition: all 0.4s;
   }
   .submit-btn .input-data:hover .inner{
