@@ -45,9 +45,38 @@
                 <span>SUMMARY: Theft of a laptop</span> <br>
                 <span>LOCATION: Building A Room 101</span>
             </div>
-
-          
-              
+            
+            <div class="wrapper">
+                <div class="clash-card barbarian">
+                  <div class="clash-card__image clash-card__image--barbarian">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="barbarian" />
+                  </div>
+                  <div class="clash-card__level clash-card__level--barbarian">Level 4</div>
+                  <div class="clash-card__unit-name">The Barbarian</div>
+                  <div class="clash-card__unit-description">
+                    The Barbarian is a kilt-clad Scottish warrior with an angry, battle-ready expression, hungry for destruction. He has Killer yellow horseshoe mustache.
+                  </div>
+            
+                  <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                    <div class="one-third">
+                      <div class="stat">20<sup>S</sup></div>
+                      <div class="stat-value">Training</div>
+                    </div>
+            
+                    <div class="one-third">
+                      <div class="stat">16</div>
+                      <div class="stat-value">Speed</div>
+                    </div>
+            
+                    <div class="one-third no-border">
+                      <div class="stat">150</div>
+                      <div class="stat-value">Cost</div>
+                    </div>
+            
+                  </div>
+            
+                </div> <!-- end clash-card barbarian-->
+              </div> <!-- end wrapper -->
         </section>
        
         <footer>
@@ -80,57 +109,7 @@
 
     <script src="../scripts/index.js"></script>
     <script>
-        // Array of card objects
-var cards = [
-  {
-    title: 'Mountain View',
-    copy: 'Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains',
-    button: 'View Trips'
-  },
-  {
-    title: 'To The Beach',
-    copy: 'Plan your next beach trip with these fabulous destinations',
-    button: 'View Trips'
-  },
-  {
-    title: 'Desert Destinations',
-    copy: 'It\'s the desert you\'ve always dreamed of',
-    button: 'Book Now'
-  },
-  {
-    title: 'Explore The Galaxy',
-    copy: 'Seriously, straight up, just blast off into outer space today',
-    button: 'Book Now'
-  },
-  {
-    title: 'Explore The Galaxy',
-    copy: 'Seriously, straight up, just blast off into outer space today',
-    button: 'Book Now'
-  }
-];
-
-// Function to generate HTML for a card
-function generateCardHTML(title, copy, button) {
-  return `
-    <div class="card">
-      <div class="content">
-        <h2 class="title">${title}</h2>
-        <p class="copy">${copy}</p>
-        <button class="btn">${button}</button>
-      </div>
-    </div>
-  `;
-}
-
-// Select the page content element
-var pageContent = document.querySelector('.page-content');
-
-// Generate and append card HTML for each item in the cards array
-cards.forEach(function(card) {
-  var cardHTML = generateCardHTML(card.title, card.copy, card.button);
-  pageContent.innerHTML += cardHTML;
-});
-
+        
       </script>
 </body>
 </html>

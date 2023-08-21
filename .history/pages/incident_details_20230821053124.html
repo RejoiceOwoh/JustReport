@@ -40,14 +40,11 @@
       
         <section>
             <div class="card-details">
-                <img class="img" src="../images/incidentmapdiv3.png" alt="card 1" srcset="">
-                <h3>DEVICE THEFT</h3>
+                <img src="../images/incidentmapdiv3.png" alt="card 1" srcset="">
+                <h2>DEVICE THEFT</h2>
                 <span>SUMMARY: Theft of a laptop</span> <br>
                 <span>LOCATION: Building A Room 101</span>
             </div>
-
-          
-              
         </section>
        
         <footer>
@@ -80,57 +77,7 @@
 
     <script src="../scripts/index.js"></script>
     <script>
-        // Array of card objects
-var cards = [
-  {
-    title: 'Mountain View',
-    copy: 'Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains',
-    button: 'View Trips'
-  },
-  {
-    title: 'To The Beach',
-    copy: 'Plan your next beach trip with these fabulous destinations',
-    button: 'View Trips'
-  },
-  {
-    title: 'Desert Destinations',
-    copy: 'It\'s the desert you\'ve always dreamed of',
-    button: 'Book Now'
-  },
-  {
-    title: 'Explore The Galaxy',
-    copy: 'Seriously, straight up, just blast off into outer space today',
-    button: 'Book Now'
-  },
-  {
-    title: 'Explore The Galaxy',
-    copy: 'Seriously, straight up, just blast off into outer space today',
-    button: 'Book Now'
-  }
-];
-
-// Function to generate HTML for a card
-function generateCardHTML(title, copy, button) {
-  return `
-    <div class="card">
-      <div class="content">
-        <h2 class="title">${title}</h2>
-        <p class="copy">${copy}</p>
-        <button class="btn">${button}</button>
-      </div>
-    </div>
-  `;
-}
-
-// Select the page content element
-var pageContent = document.querySelector('.page-content');
-
-// Generate and append card HTML for each item in the cards array
-cards.forEach(function(card) {
-  var cardHTML = generateCardHTML(card.title, card.copy, card.button);
-  pageContent.innerHTML += cardHTML;
-});
-
+        
       </script>
 </body>
 </html>
