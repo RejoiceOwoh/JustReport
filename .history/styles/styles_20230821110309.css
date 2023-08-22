@@ -500,8 +500,8 @@ footer>div>button{
     color: #1E1E1E;
     background-color: #F5F5F5;
     background: #F5F5F5;
-    padding: 20px;
-    margin: 20px;
+    /* padding: 20px;
+    margin: 20px; */
     /* display: flex;
     height: 500px;
     flex-direction: column; */

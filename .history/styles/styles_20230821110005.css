@@ -519,6 +519,7 @@ section>.page-content {
 .cardDetails {
     color:#1E1E1E;
     display: flex;
+    padding: 20px;
 }
 
 .cardImg {

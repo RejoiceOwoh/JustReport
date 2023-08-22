@@ -505,7 +505,6 @@ footer>div>button{
     /* display: flex;
     height: 500px;
     flex-direction: column; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 25%;
 }
 
@@ -519,6 +518,7 @@ section>.page-content {
 .cardDetails {
     color:#1E1E1E;
     display: flex;
+    padding: 20px;
 }
 
 .cardImg {
