@@ -495,3 +495,40 @@ footer>div>button{
     text-align: center;
     background: #FFF;
 }
+
+.card {
+    color: #1E1E1E;
+    background-color: #F5F5F5;
+    background: #F5F5F5;
+    padding: 20px;
+    margin: 20px;
+    /* display: flex;
+    height: 500px;
+    flex-direction: column; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 25%;
+}
+
+.card>img {
+}
+
+section>.page-content {
+    display: flex;
+}
+
+.cardDetails {
+    color:#1E1E1E;
+    display: flex;
+}
+
+.cardImg {
+}
+
+.image {
+    display: flex;
+    padding: 10px;
+}
+
+.image>div>img {
+    width: 250px;
+}

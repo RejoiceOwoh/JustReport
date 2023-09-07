@@ -500,18 +500,16 @@ footer>div>button{
     color: #1E1E1E;
     background-color: #F5F5F5;
     background: #F5F5F5;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin: 20px;
+    /* display: flex;
+    height: 500px;
+    flex-direction: column; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 25%;
 }
 
 .card>img {
-    width: 100%;
-}
-
-.card>div>h3 {
-    color:#1E1E1E
 }
 
 section>.page-content {
@@ -519,6 +517,13 @@ section>.page-content {
 }
 
 .cardDetails {
-    width: 100%;
+    color:#1E1E1E;
+    display: flex;
 }
 
+.cardImg {
+}
+
+.image {
+    display: flex;
+}

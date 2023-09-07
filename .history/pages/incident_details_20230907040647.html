@@ -19,7 +19,7 @@
                     <li> <a href="index.html">Home</a></li>
                     <li> <a href="about.html">About</a></li>
                     <li><a href="report_a_crime.html">Report a Crime</a></li>
-                    <li id="active"><a href="incident_details.html">Incident Details</a></li>
+                    <li id="active">Incident Details</li>
                 </ul>
             </nav>
             <button><a href="tel:+2348103847330">CALL HOTLINE</a></button>
@@ -30,6 +30,8 @@
             </h1>     
             <p>
                 Know the Ongoing incidents and details of the recent crimes happening in the campus and nearby vicinities
+                <h4>TRACK AN INCIDENT</h4>
+                <input type="text" name="search" id="search">
             </p>
         </div>
     </div>
@@ -146,6 +148,33 @@
 
 
     <script src="../scripts/index.js"></script>
+
+    <script>
+      // Get the search input element by its name
+      const searchInput = document.getElementsByName("search")[0]; // Get the first element with the name "search"
+    
+      // Get all cards
+      const cards = document.querySelectorAll(".card");
+    
+      // Add an event listener to the search input
+      searchInput.addEventListener("input", function () {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+    
+        // Loop through each card
+        cards.forEach((card) => {
+          const incidentId = card.querySelector("p b:nth-child(2)").textContent.toLowerCase();
+    
+          // Check if the incident ID contains the search term
+          if (incidentId.includes(searchTerm)) {
+            card.style.display = "block"; // Show the card
+          } else {
+            card.style.display = "none"; // Hide the card
+          }
+        });
+      });
+    </script>
+    
+
 
 </body>
 </html>

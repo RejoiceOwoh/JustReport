@@ -501,7 +501,10 @@ footer>div>button{
     background-color: #F5F5F5;
     background: #F5F5F5;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
+    /* display: flex;
+    height: 500px;
+    flex-direction: column; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 25%;
 }
@@ -510,8 +513,8 @@ footer>div>button{
     width: 100%;
 }
 
-.card>div>h3 {
-    color:#1E1E1E
+.card>h1 {
+    color: #FF4136;
 }
 
 section>.page-content {
@@ -522,3 +525,16 @@ section>.page-content {
     width: 100%;
 }
 
+.cardImg {
+}
+
+.image {
+    display: flex;
+    color: #1E1E1E;
+}
+
+
+
+.image>div>img {
+    width: 250px;
+}

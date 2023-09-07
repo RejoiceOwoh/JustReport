@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Details</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+
+</head>
+<body class="other">
+    <div class="about">
+        <header>
+            <h2>Just <span id="logo">Report</span></h2>
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li><a href="report_a_crime.html">Report a Crime</a></li>
+                    <li id="active">Incident Details</li>
+                </ul>
+            </nav>
+            <button><a href="tel:+2348103847330">CALL HOTLINE</a></button>
+        </header> 
+        <div class="headerText">
+            <h1>
+                Ongoing Incidents
+            </h1>     
+            <p>
+                Know the Ongoing incidents and details of the recent crimes happening in the campus and nearby vicinities
+                <h4>TRACK AN INCIDENT</h4>
+                <input type="text" name="search" id="search">
+            </p>
+        </div>
+    </div>
+
+    <main>
+
+        <secction class="cardDetails">
+            <div class="card">
+                <img src="..\images\reportdive1.png" alt="">
+                
+                <div>
+                  <h1>Card 1</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, illo, error libero incidunt nostrum at corrupti, et enim ut dolorum consectetur aliquam sequi quod numquam. Esse magni optio veniam fugiat!</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <h1>Card 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sit mollitia voluptates consectetur explicabo, dolore distinctio harum nisi veritatis quidem fuga minima saepe nobis ipsam excepturi nesciunt voluptatem expedita maiores.</p>
+            </div>
+            <div class="card">
+                <h1>Card 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis similique, excepturi maiores delectus animi sunt quae voluptates labore laudantium, doloremque voluptas. Reprehenderit aliquid quod totam, nemo cupiditate quos consectetur aliquam!</p>
+            </div>
+            <div class="card">
+                <h1>Card 4</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum necessitatibus sunt debitis repellendus quis autem aliquid voluptas recusandae est quos repellat provident cupiditate ea magnam veniam sed, omnis ut? Impedit?</p>
+            </div>
+        </secction>
+      
+
+        <div>
+          <img src="../images/aboutdiv2.png" alt="1">
+          <img src="/images/aboutdiv1.jpg" alt="2">
+          <img src="../images/aboutdiv3.png" alt="3">
+          <img src="../images/headerinterview.jpg" alt="4">
+        </div>
+
+        <section class="page-content">
+
+          
+              
+        </section>
+       
+        <footer>
+            
+            <div>
+                <h2>Just <span id="logo">Report</span></h2>
+                <p><a href="https://formsubmit.io/accounts/login/">Login Here!</a></p>
+            </div>
+            <div>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+            </div>
+            <div>
+                <p><a href="report_a_crime.html">Report a Crime</a></p>
+                <p>Incident Map </p>
+            </div>
+            <div>
+                <p><a href="incident_details.html">Incident Details</a></p>
+                <p><a href="incident_details.html">Track Reported Case</a></p>
+            </div>
+            <div>
+                <button><a href="report_page_form.html">REPORT A CRIME</a></button>
+            </div>
+        </footer>
+        <p class="copyright">
+            All Rights Reserved by Obinna 2023 UNN Final Year Project
+        </p>
+    </main>
+
+
+    <script src="../scripts/index.js"></script>
+    <script>
+        // Array of card objects
+var cards = [
+  {
+    title: 'Mountain View',
+    copy: 'Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains',
+    button: 'View Trips'
+  },
+  {
+    title: 'To The Beach',
+    copy: 'Plan your next beach trip with these fabulous destinations',
+    button: 'View Trips'
+  },
+  {
+    title: 'Desert Destinations',
+    copy: 'It\'s the desert you\'ve always dreamed of',
+    button: 'Book Now'
+  },
+  {
+    title: 'Explore The Galaxy',
+    copy: 'Seriously, straight up, just blast off into outer space today',
+    button: 'Book Now'
+  },
+  {
+    title: 'Explore The Galaxy',
+    copy: 'Seriously, straight up, just blast off into outer space today',
+    button: 'Book Now'
+  }
+];
+
+// Function to generate HTML for a card
+function generateCardHTML(title, copy, button) {
+  return `
+    <div class="card">
+      <div class="content">
+        <h2 class="title">${title}</h2>
+        <p class="copy">${copy}</p>
+        <button class="btn">${button}</button>
+      </div>
+    </div>
+  `;
+}
+
+// Select the page content element
+var pageContent = document.querySelector('.page-content');
+
+// Generate and append card HTML for each item in the cards array
+cards.forEach(function(card) {
+  var cardHTML = generateCardHTML(card.title, card.copy, card.button);
+  pageContent.innerHTML += cardHTML;
+});
+
+      </script>
+</body>
+</html>
